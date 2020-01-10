@@ -1,5 +1,5 @@
 """
-This is an automated test to select the desired specifications to filter the products at https://www.productchart.com
+This is an automated test for Discover Music component of Gnod.com, the test involves entering the discover music page,filling out and submitting the form,checking the response buttons
 """
 import os,sys,time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
