@@ -12,49 +12,21 @@
 #XPATH
 ###########################################
 
-#Locators for the footer object(footer_object.py)
+#Locators for the Discover Music component
+discover_music="xpath,//A[@href='http://www.gnoosic.com']"
+continue_button="xpath,//A[@class='continue'][text()='continue']"
+textbox1="xpath,(//INPUT[@type='text'])[1]"
+textbox2="xpath,(//INPUT[@type='text'])[2]"
+textbox3="xpath,(//INPUT[@type='text'])[3]"
+submit_button="xpath,//INPUT[@type='submit']"
+like_button="xpath,//INPUT[@class='like_yes']"
+dislike_button="xpath,//INPUT[@class='like_no']"
+dont_know_button="xpath,//INPUT[@class='like_dunno']"
 
-footer_menu = "xpath,//ul[contains(@class,'nav-justified')]/descendant::a[text()='%s']"
-copyright_text = "xpath,//p[contains(@class,'qxf2_copyright')]"
-#----
-
-#Locators for the form object(form_object.py)
-name_field = "id,name"       
-email_field = "name,email"
-phone_no_field = "css selector,#phone"
-click_me_button = "xpath,//button[text()='Click me!']"
-gender_dropdown = "xpath,//button[@data-toggle='dropdown']"
-gender_option = "xpath,//a[text()='%s']"
-tac_checkbox = "xpath,//input[@type='checkbox']"
-#----
-
-#Locators for hamburger menu object(hamburg_menu_object.py)
-menu_icon = "xpath,//img[@alt='Menu']"
-menu_link = "xpath,//ul[contains(@class,'dropdown-menu')]/descendant::a[text()='%s']"
-menu_item = "xpath,//ul[contains(@class,'dropdown-menu')]/descendant::a[@data-toggle='dropdown' and text()='%s']"
-#----
-
-#Locators for header object(header_object.py)
-qxf2_logo = "xpath,//img[contains(@src,'qxf2_logo.png')]"
-qxf2_tagline_part1 = "xpath,//h1[contains(@class,'banner-brown') and text()='SOFTWARE TESTING SERVICES']"
-qxf2_tagline_part2 = "xpath,//h1[contains(@class,'banner-grey') and text()='for startups']"
-#----
-
-#Locators for table object(table_object.py)
-table_xpath = "xpath,//table[@name='Example Table']"
-rows_xpath = "xpath,//table[@name='Example Table']//tbody/descendant::tr"
-cols_xpath = "xpath,//table[@name='Example Table']//tbody/descendant::td"
-cols_relative_xpath = "xpath,//table[@name='Example Table']//tbody/descendant::tr[%d]/descendant::td"
-cols_header = "xpath,//table[@name='Example Table']//thead/descendant::th"
-#----
-
-#Locators for tutorial redirect page(tutorial_redirect_page.py)
-heading = "xpath,//h2[contains(@class,'grey_text') and text()='Selenium for beginners: Practice page 2']"
-
-#Locators for Contact Object(contact_object.py)
-contact_name_field = "id,name"
-
-#Locators for mobile application - Bitcoin Info(bitcoin_price_page.py)
-bitcoin_real_time_price_button = "xpath,//android.widget.TextView[@resource-id='com.dudam.rohan.bitcoininfo:id/current_price']"
-bitcoin_price_page_heading = "xpath,//android.widget.TextView[@text='Real Time Price of Bitcoin']"
-bitcoin_price_in_usd = "xpath,//android.widget.TextView[@resource-id='com.dudam.rohan.bitcoininfo:id/doller_value']"
+#Locators for the  productchart component
+productchart="xpath,//H3[text()='Product Chart']"
+smartphone_tab="xpath,(//A[@class='product'])[1]"
+brand_menu="xpath,//A[@id='toggle_brand']"
+samsung_checkbox="xpath,(//INPUT[@type='checkbox'])[32]"
+os_menu="xpath,//A[@id='toggle_os']"
+android_checkbox="xpath,(//INPUT[@type='checkbox'])[1]"
