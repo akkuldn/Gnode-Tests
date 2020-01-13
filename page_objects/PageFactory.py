@@ -5,8 +5,6 @@ Add elif clauses as and when you implement new pages.
 Pages implemented so far:
 1. Product chart smartphone page
 """
-
-from page_objects.Product_Smartphone_Page import Product_Smartphone_Page
 from page_objects.Gnod_Home_Page import Gnod_Home_Page
 import conf.base_url_conf
 from page_objects.zero_page import Zero_Page

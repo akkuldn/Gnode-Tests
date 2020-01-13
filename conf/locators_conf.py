@@ -27,6 +27,12 @@ dont_know_button="xpath,//INPUT[@class='like_dunno']"
 productchart="xpath,//H3[text()='Product Chart']"
 smartphone_tab="xpath,(//A[@class='product'])[1]"
 brand_menu="xpath,//A[@id='toggle_brand']"
-samsung_checkbox="xpath,(//INPUT[@type='checkbox'])[32]"
+samsung_checkbox="xpath,(//INPUT[@type='checkbox'])[33]"
 os_menu="xpath,//A[@id='toggle_os']"
 android_checkbox="xpath,(//INPUT[@type='checkbox'])[1]"
+
+#Locators for movie map
+movie_map="xpath,//A[@href='https://www.movie-map.com/']"
+search_bar="xpath,//INPUT[@id='f']"
+search_button="xpath,//BUTTON[@class='search_button']"
+nearest_movie="xpath,//A[@id='s1']"

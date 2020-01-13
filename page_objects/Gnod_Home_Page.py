@@ -5,8 +5,9 @@ URL: http://www.gnod.com/
 from .Base_Page import Base_Page
 from .Productchart_Objects import Productchart_Objects
 from .GnodMusic_Objects import GnodMusic_Objects
+from .Moviemap_Objects import Moviemap_Objects
 
-class Gnod_Home_Page(Base_Page,Productchart_Objects,GnodMusic_Objects):
+class Gnod_Home_Page(Base_Page,Productchart_Objects,GnodMusic_Objects,Moviemap_Objects):
     "Page Object for the productchart page"
     
     def start(self):
