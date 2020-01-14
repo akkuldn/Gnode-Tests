@@ -16,6 +16,7 @@ class Productchart_Objects:
     brand_checkbox=locators.samsung_checkbox
     os_menu=locators.os_menu
     os_checkbox=locators.android_checkbox
+    result_element=locators.product_y_axis
 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -30,6 +31,11 @@ class Productchart_Objects:
 
         #Click on Smartphone Tab
         result_flag &= self.click_element(self.smartphone_tab)
+
+        self.wait(wait_seconds)
+
+        #verify with an element from the result page if we have successfully landed on the result page
+        result_flag &= self.check_element_present(self.result_element)
         
         self.conditional_write(result_flag,
         positive='Successfully entered the smartphone category of product chart page',

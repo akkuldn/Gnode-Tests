@@ -22,6 +22,7 @@ submit_button="xpath,//INPUT[@type='submit']"
 like_button="xpath,//INPUT[@class='like_yes']"
 dislike_button="xpath,//INPUT[@class='like_no']"
 dont_know_button="xpath,//INPUT[@class='like_dunno']"
+music_result="xpath,//A[@id='result']"
 
 #Locators for the  productchart component
 productchart="xpath,//H3[text()='Product Chart']"
@@ -30,9 +31,12 @@ brand_menu="xpath,//A[@id='toggle_brand']"
 samsung_checkbox="xpath,(//INPUT[@type='checkbox'])[33]"
 os_menu="xpath,//A[@id='toggle_os']"
 android_checkbox="xpath,(//INPUT[@type='checkbox'])[1]"
+#locator used to verify if we have successfully landed on the result page
+product_y_axis="xpath,//DIV[@id='y-axis-label']"
 
 #Locators for movie map
 movie_map="xpath,//A[@href='https://www.movie-map.com/']"
 search_bar="xpath,//INPUT[@id='f']"
 search_button="xpath,//BUTTON[@class='search_button']"
 nearest_movie="xpath,//A[@id='s1']"
+moviemap_result="xpath,//A[@id='s0']"

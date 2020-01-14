@@ -14,6 +14,7 @@ class Moviemap_Objects:
     search_bar=locators.search_bar
     search_button=locators.search_button
     nearest_movie=locators.nearest_movie
+    moviemap_result=locators.moviemap_result
 
 
     @Wrapit._exceptionHandler
@@ -35,7 +36,7 @@ class Moviemap_Objects:
 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
-    def search_movie_map(self,movie_name,wait_seconds=1):
+    def search_movie_map(self,movie_name,wait_seconds=2):
         "Fuction to search for a movie in the movie map search bar"
 
         #enter text into search bar
@@ -47,6 +48,9 @@ class Moviemap_Objects:
         result_flag &= self.click_element(self.search_button)
 
         self.wait(wait_seconds)
+        
+        #verify with an element from the result page if we have successfully landed on the result page
+        result_flag &= self.check_element_displayed(self.moviemap_result)
 
         self.conditional_write(result_flag,
         positive='search query submitted successfully',

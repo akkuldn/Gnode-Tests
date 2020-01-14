@@ -18,6 +18,7 @@ class GnodMusic_Objects:
     like_button=locators.like_button
     dislike_button=locators.dislike_button
     dont_know_button=locators.dont_know_button
+    result=locators.music_result
 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -34,8 +35,8 @@ class GnodMusic_Objects:
         result_flag &= self.click_element(self.continue_button)
         
         self.conditional_write(result_flag,
-        positive='Successfully entered the smartphone category of product chart page',
-        negative='Failed to access the product chart',
+        positive='Successfully entered the discover music page',
+        negative='Failed to access the discover music page',
         level='debug')
 
         return result_flag
@@ -63,8 +64,13 @@ class GnodMusic_Objects:
         #click on the submit button
         result_flag &= self.click_element(self.submit_button)
 
+        self.wait(wait_seconds)
+
+        #check if result element is displayed after submitting the form
+        result_flag &= self.check_element_displayed(self.result)
+
         self.conditional_write(result_flag,
-        positive='submitted the form',
+        positive='submitted the form and obtained the result',
         negative='failed to submit the form',
         level='debug')
 
