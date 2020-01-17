@@ -10,7 +10,7 @@ import conf.Gnod_conf as conf
 
 
 @pytest.mark.GUI
-def test_product_chart(test_obj):
+def test_discover_music(test_obj):
 
     "Run the test"
     try:
@@ -73,7 +73,7 @@ if __name__=='__main__':
         test_obj.register_driver(options.remote_flag,options.os_name,options.os_version,options.browser,options.browser_version,options.remote_project_name,options.remote_build_name)
 
 
-        test_product_chart(test_obj)
+        test_discover_music(test_obj)
                 
         #teardowm
         test_obj.wait(3)
